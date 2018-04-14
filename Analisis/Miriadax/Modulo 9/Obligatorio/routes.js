@@ -1,0 +1,1 @@
+var posicion = [{ lat:"",lng:""}];

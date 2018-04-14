@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://alex08.neocities.org/calcu.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Calculadora de Alexander</title>
+    <link href="./Calculadora de Alexander_files/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body onload="iniciar()">
+    <h1>Buenos días, bienvenidos a la calculadora de Alex</h1>
+    
+    <script type="text/javascript"> 
+    var num, acc = 0, op = "";
+    
+    function iniciar() {
+      num = document.getElementById("num");
+    }
+    
+    function suma() {
+      acc = num.value;
+      op = "+";
+    }
+    
+    function resta() {
+      acc = num.value;      
+      op = "-";
+    }
+    
+    function multiplicacion() {
+      acc = num.value;      
+      op = "*";
+    }    
+    
+    function division() {
+      acc = num.value;      
+      op = "/";
+    }    
+
+    function x_elevado_y() {
+      acc = num.value;      
+      op = "x^y";
+    }    
+
+    function cuadrado() {     
+      num.value = num.value * num.value;
+    }  
+
+    function inverso() {
+      num.value = 1/num.value;     
+    }  
+
+    function raiz_cuadrada() {
+      num.value = sqrt(num.value);     
+    }  
+    
+    function parte_entera() {
+      if (num.value >= 0) { num.value = Math.floor(num.value) }
+      else                { num.value = Math.ceil(num.value) }
+    }          
+    
+    function vaciar() {
+      num.value = "";
+    }
+    
+    function calcular() {
+      if (op === "+") {num.value = (+acc + +num.value) }
+      if (op === "-") {num.value = (+acc - +num.value) }
+      if (op === "*") {num.value = (+acc * +num.value) }
+      if (op === "/") {num.value = (+acc / +num.value) }
+      if (op === "x^y") {num.value = Math.pow(+acc, +num.value) }
+    }
+    </script>
+  
+  <input type="text" size="12" id="num" onclick="vaciar()">
+  <button onclick="suma()">+</button>
+  <button onclick="resta()">-</button>
+  <button onclick="multiplicacion()">*</button>
+  <button onclick="division()">/</button>
+  <button onclick="cuadrado()">x<sup>2</sup></button>
+  <button onclick="inverso()">1/x</button>
+  <button onclick="parte_entera()">Entero</button>
+  <button onclick="x_elevado_y()">x<sup>y</sup></button>
+  <button onclick="calcular()">Calcular</button>
+  
+
+  
+</body></html>

@@ -1,0 +1,31 @@
+.calculadora {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: red;
+    width: 440px;
+    height: 500px;
+    border-radius: 25px;
+}
+.calculadora td button {
+    display:block;
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
+}
+#resultado{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    width: 370px;
+    height: 100px;
+    line-height: 100px;
+    background-color:rgb(160, 229, 209);
+    border-radius: 25px;
+    overflow-y: scroll;
+
+}
+.Alex{
+    background-color: blue;
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>GMaps.js &mdash; Geolocation</title>
+  <script type="text/javascript" src="zepto.min.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script type="text/javascript" src="gmaps.js"></script>
+  <script type="text/javascript" src="routes.js"></script>
+  <link rel="stylesheet" type="text/css" href="mypath.css" />
+
+  <style type="text/css">
+    #cajaboton #reset{
+      margin-left: 80%;
+      font-size: 1.1em;
+    }
+     #cajaboton #compactar{
+      margin-left: 80%;
+      font-size: 1.1em;
+    }
+    #cajaboton h1{
+      margin-top: 0px;
+    }
+
+  </style>
+  <script type="text/javascript">
+    var map, lat, lng,rutas;
+
+    $(function(){
+
+
+      $("#reset").on("click", function(){
+        localStorage.routes = "";
+        geolocalizar();
+      })
+
+      $("#compactar").on("click", function(){
+        geolocalizarCompacto();
+      })
+
+
+
+      function enlazarMarcador(e){
+
+        rutas = JSON.parse(localStorage.routes);
+        console.info("evento lat= " + e.latLng.lat());
+       console.info("evento lng= " + e.latLng.lng());
+            // muestra ruta entre marcas anteriores y actuales
+          map.drawRoute({
+            origin: [rutas[rutas.length-1].lat,rutas[rutas.length-1].lng],  // origen en coordenadas anteriores
+            // destino en coordenadas del click o toque actual
+            destination: [e.latLng.lat(), e.latLng.lng()],
+            travelMode: 'driving',
+            strokeColor: '#000000',
+            strokeOpacity: 0.6,
+            strokeWeight: 5
+          });
+
+
+          lat = e.latLng.lat();   // guarda coords para marca siguiente
+          lng = e.latLng.lng();
+
+          map.addMarker({ lat: lat, lng: lng});  // pone marcador en mapa
+          rutas.push({lat:e.latLng.lat(),lng:e.latLng.lng()});
+          localStorage.routes =  JSON.stringify(rutas);
+        
+
+      };
+
+
+
+      function enlazarMarcadorlocalStorage(pos,origen,map){
+      
+
+            // muestra ruta entre marcas anteriores y actuales
+            map.drawRoute({
+              origin: [origen.lat, origen.lng],  // origen en coordenadas anteriores
+              // destino en coordenadas del click o toque actual
+              destination: [pos.lat, pos.lng],
+              travelMode: 'driving',
+              strokeColor: '#000000',
+              strokeOpacity: 0.6,
+              strokeWeight: 5
+            });
+
+
+            map.addMarker({ lat: pos.lat, lng: pos.lng});  // pone marcador en mapa
+        
+      };
+
+      function geolocalizar(){
+        GMaps.geolocate({
+          success: function(position){
+
+        //localstore
+            localStorage.routes = (localStorage.routes  || "");
+            if (localStorage.routes != ""){
+              console.info("entro por localStorage");
+              rutas = JSON.parse(localStorage.routes);
+              lat = rutas[0].lat;
+              lng = rutas[0].lng;  
+            }else{
+              console.info("localStorage vacio");
+              lat = position.coords.latitude;
+              lng = position.coords.longitude;
+              posicion[0].lat=lat;
+              posicion[0].lng=lng;
+              localStorage.routes =  JSON.stringify(posicion);
+              rutas = JSON.parse(localStorage.routes);
+            }
+            if (rutas.length==1){
+                  map = new GMaps({  // muestra mapa centrado en coords [lat, lng]
+                          el: '#map',
+                          lat: lat,
+                          lng: lng,
+                          click: enlazarMarcador,
+                          tap: enlazarMarcador
+                  });
+                  map.addMarker({ lat: lat, lng: lng}); 
+
+            }else if (rutas.length>1){
+                  map = new GMaps({  // muestra mapa centrado en coords [lat, lng]
+                          el: '#map',
+                          lat: lat,
+                          lng: lng,
+                          click: enlazarMarcador,
+                          tap: enlazarMarcador
+                  });
+                  map.addMarker({ lat: lat, lng: lng});
+                  for (var i=0;i<rutas.length-1;i++){
+                      enlazarMarcadorlocalStorage(rutas[i+1],rutas[i],map);
+                  }
+            }
+
+            
+          },
+          error: function(error) { alert('Geolocalización falla: '+error.message); },
+          not_supported: function(){ alert("Su navegador no soporta geolocalización"); },
+        });
+      };
+
+//compacto
+      function geolocalizarCompacto(){
+        GMaps.geolocate({
+          success: function(position){
+
+              console.info("entro por compacto");
+              rutas = JSON.parse(localStorage.routes);
+              lat = rutas[0].lat;
+              lng = rutas[0].lng;  
+              map = new GMaps({  // muestra mapa centrado en coords [lat, lng]
+                      el: '#map',
+                      lat: lat,
+                      lng: lng,
+                      click: enlazarMarcador,
+                      tap: enlazarMarcador
+              });
+              map.addMarker({ lat: lat, lng: lng});
+              enlazarMarcadorlocalStorage(rutas[rutas.length-1],rutas[0],map);
+          },
+          error: function(error) { alert('Geolocalización falla: '+error.message); },
+          not_supported: function(){ alert("Su navegador no soporta geolocalización"); },
+        });
+      };
+
+      geolocalizar();
+    });
+  </script>
+</head>
+<body>
+  <div id="cajaboton">
+    <button id="compactar">Compactar búsqueda</button>
+    <button id="reset">Reinicia la búsqueda</button>
+    <h1>Geolocalización</h1>
+  </div>
+
+  <div id="map"></div>
+</body>
+</html>
