@@ -1,0 +1,23 @@
+@media(max-width: 797.98px){
+    body{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%; 
+        
+    }
+
+    
+    .one, .two, .three, .four, .four one, .five, .five one{
+        border: 1px solid;
+        border-width: 1px;
+        padding: 0rem;
+        width: 280px;
+        flex-grow: 1;
+        font-family: "Pompiere";
+        font-size: 0.5rem;
+        background-color: bisque;
+    }
+
+
+}
+

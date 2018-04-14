@@ -1,0 +1,348 @@
+1. Como ir al baño  
+
+Inicio
+•	Primero abrír los ojos
+•	Me senté en la cama
+•	Me coloque las chanclas
+•	Abrí la puerta
+•	Camine Hacia la escalera
+•	Baje las escaleras
+•	Camine hacia la puerta del baño
+•	Abrí la puerta del baño
+•	Prendí la luz del baño
+•	Cerré la puerta del baño
+•	Hice la necesidad
+•	Me lave las manos
+•	Apague la luz del Baño
+•	Abrí la puerta del baño
+•	Camine hacia la escalera
+•	Subí las escaleras
+•	Camine hacia el cuarto
+•	Cerré la puerta del cuarto
+•	Me quite las chanclas
+•	Me acosté en la cama
+
+Fin
+
+2.Preparar un huevo
+ 
+Inicio
+•	Me levanto del comedor 
+•	Me dirijo a la cocina
+•	Me acerco a la estufa
+•	Me agacho
+•	Busco la paila
+•	Me levanto 
+•	Limpio la paila
+•	Enciendo la estufa
+•	Pongo la paila
+•	Busco la mantequilla 
+•	Cojo una cuchara
+•	Unto la cúchala con mantequilla
+•	Pongo la cuchara en la paila
+•	Espero a que se derrita
+•	Cojo un Huevo
+•	Lo golpeo
+•	Hecho el Huevo golpeado a la paila
+•	Me acerco a la alacena
+•	Saco un poquito de sal
+•	Me acerco a la estufa
+•	Hecho la sal en la paila
+•	Revuelvo el huevo
+•	Espero a que este el huevo
+•	Apago la estufa
+•	Cojo un plato
+•	Cojo la paila
+•	Sirvo el huevo
+•	Me dirijo hacia la puerta de la cocina
+•	Salgo de la cocina
+•	Me dirijo hacia el comedor
+
+Fin.
+
+3.Buy an ice cream
+
+Start
+•	I'm looking for the money in my pockets
+        Busco el dinero en los bolsillos
+
+•	I turn and head towards the road
+        Me giro y me dirijo hacia la carretera
+
+•	It hit the road
+        Llego a la carretera
+
+•	I look on both sides of the road
+      Miro a ambos lados de la carretera
+
+•	I cross the road
+        Cruzo la carretera	
+
+•	I arrive at the store
+        Llego a la tienda
+
+•	I enter the store
+        Entro a la tienda
+
+•	I ask if he has ice cream
+        Pregunto si tiene helados
+
+•	I choose ice cream
+        Escojo el helado
+
+•	I ask for the ice cream
+        Pido el helado
+
+•	I pay for the ice cream
+         Pago el helado
+
+•	I leave the store
+        Salgo de la tienda
+
+•	Road to the road
+        Camino hacia la carretera
+
+•	I hit the road
+        Llego a la carretera
+
+•	I look both ways
+        Miro a ambos lados
+
+•	I cross the road
+        Cruzo la carretera
+
+•	I'm heading towards the house
+        Me dirijo hacia la casa
+
+•	I come to the garden
+        Llego a ante jardín
+
+End
+
+4.Bathe before going to the Sena
+
+Start
+
+I enter the bathroom
+Entro al baño
+
+Cierro la puerta del baño
+
+I open the sink faucet
+Abro la llave del lavamanos
+
+I wet my face
+Me mojo la cara
+
+I close the sink faucet
+Cierro la llave del lavamanos
+
+I take the shaving cream
+Cojo la crema de afeitar
+
+I even shave cream
+Me unto la crema de afeitar
+
+I take the razor blade
+Cojo la cuchilla de afeitar
+
+I open the sink faucet
+Abro la llave del lavamanos
+
+Mojo razor blade
+Mojo la cuchilla de afeitar
+
+I close the sink faucet
+Cierro la llave del lavamanos
+
+I shave
+Me afeito
+
+
+I open the sink faucet
+Abro la llave de lavamanos
+
+I clean the razor blade
+Limpio la cuchilla de afeitar
+
+I close the sink faucet
+Cierro la llave del lavamanos
+
+I undress
+Me desvisto
+
+I open the shower door
+Abro la puerta de la ducha
+
+I enter the shower
+Entro en la ducha
+
+I close the shower
+Cierro la ducha
+
+I open the shower key
+Abro la llave de la ducha
+
+I shower
+Me ducho
+
+I take the shampoo
+Cojo el champú
+
+I even shampoo in the head
+Me unto el champú en la cabeza
+
+I pick up the soap
+Cojo el jabón
+
+I rub myself with soap
+Me estrego con el jabón
+I open the shower key
+Abro la llave de la ducha
+
+I rinse
+Me enjuago
+
+I close the shower key
+Cierro la llave de la ducha
+
+I open the shower door
+Abro la puerta de la ducha
+
+I take the towel
+Cojo la toalla
+
+I put the towel
+Me pongo la toalla 
+
+I take the dirty clothes
+Cojo la ropa sucia
+
+I open the bathroom door
+Abro la puerta del baño
+
+I leave the bathroom
+Salgo del baño
+
+I'm going to the stairs
+Me dirijo a las escaleras
+
+I climb the stairs
+Subo las escaleras
+
+I enter the patio
+Entro el patio
+
+I leave the clothes in the washing machine
+Dejo la ropa en la lavadora
+I leave the patio
+Salgo del patio
+
+I'm going to the room
+Me dirijo a el cuarto
+
+I close the door of the room
+Cierro la puerta del cuarto
+
+I dress up
+Me visto
+
+He made me deodorant
+Me hecho desodorante
+
+I did lotion
+Me hecho loción
+
+I read the supplies in the backpack
+Alisto los útiles en el morral
+
+I open the door of the room
+Abro la puerta del cuarto
+
+I close the door of the room
+Cierro la puerta del cuarto
+
+I'm going to the stairs
+Me dirijo a las escaleras
+
+Under the stairs
+Bajo las escaleras
+
+I'm heading towards the dining room
+Me dirijo hacia el comedor
+
+I leave the backpack on the dining table
+Dejo el morral en la mesa del comedor
+I'm going to the bathroom
+Me dirijo al baño
+
+I open the sink faucet
+Abro la llave del lavamanos
+
+Soak the toothbrush 
+Remojo el cepillo de dientes
+
+I close the key
+Cierro la llave
+
+I take the toothpaste
+Cojo la crema dental
+
+To toothpaste on the brush
+Unto la crema dental en el cepillo
+
+I brush
+Me cepillo
+
+I open the sink faucet
+Abro la llave del lavamanos
+
+I rinse my mouth
+Me enjuago la boca
+
+I close the sink tap
+Cierro la llave de lavamanos
+
+I take the towel
+Cojo la toalla
+
+I dry my mouth
+Me seco la boca
+
+I leave the bathroom
+Salgo del baño
+I'm going to the dining room
+Me dirijo al comedor
+
+I take the backpack
+Cojo el morral
+
+I take the keys to the motorbike and the helmet
+Cojo las llaves de la moto y el casco
+
+I start the motorcycle
+Prendo la moto
+
+I go out of the house
+Salgo de la casa
+
+I warm the motorbike 
+Caliento la moto
+
+I dismiss
+Me despido
+
+I start with the motorbike towards the Sena
+Arranco con la moto hacia el Sena
+
+Parking the motorbike
+Parqueo la moto
+
+I'm heading towards the Sena
+Me dirijo hacia el Sena
+
+I arrive at the Sena
+Llego al Sena
+
+End
+

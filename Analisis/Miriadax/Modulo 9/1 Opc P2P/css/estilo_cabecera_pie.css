@@ -16,7 +16,7 @@ a{
 	padding:0;
 }
 .cabecera{
-	background-color: red;
+	background-color: silver;
 	padding: 20px;
 }
 .nombre{
@@ -37,7 +37,7 @@ a{
     background:url("../images/nav-icon.png") 100% no-repeat;
 }
 .navegar{
-	background-color: #E44F2B;
+	background-color: red;
 }
 .navegar:before, .navegar:after{
     content: " "; 
@@ -55,7 +55,7 @@ a{
 	transition: all 0.3s ease-in-out;
 }
 .navegar a:hover{
-	color: black;
+	color: pink;
 }
 .navegar li{
     position: relative;
