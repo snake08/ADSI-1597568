@@ -5,7 +5,7 @@ namespace Myfirstproject;
 class blink {
 
   public function name () {
-    echo 'Welcome, people';
+    echo 'Welcome, My name is Alexander Vicuña Ramirez';
   }
 
 }
