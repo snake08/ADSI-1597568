@@ -1,0 +1,28 @@
+/* 
+    Created on : 25/04/2018, 12:51:32 PM
+    Author     : alexv
+*/
+
+@media (max-width:797.98px){
+    .style{
+            display: flex;
+            margin:20px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: blue;
+    }
+    input{
+        display: flex;
+        position: relative;
+        top:20px;
+        center: 60xp;
+    }
+    select{
+        display: flex;
+        position: relative;
+        top:20xp;
+        center: 60px;
+    }
+}
+

@@ -1,0 +1,52 @@
+/* 
+    Created on : 24/04/2018, 01:35:31 PM
+    Author     : alexv
+*/
+@font-face{
+    font-family: Indie Flower;
+    src: url('https://fonts.googleapis.com/css?family=Indie+Flower');
+}
+body {
+    display: flex;
+    margin: 15px;
+    padding: 15px;
+    margin: 0em;
+    height: 100vh;
+    background: silver;
+}
+.style{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: blueviolet;
+       
+        width: 600px;
+        height: 400px; 
+}
+input{
+    font-size: 18px;
+}
+select{
+   font-size: 20px;
+  
+   top: 10px;
+   
+   
+}
+button{
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+    left: 60px;
+}
+p {
+    font-size: 22px;
+    position: relative;
+    top: 20px;
+}
+h1{
+     font-family: 'Indie Flower', cursive;
+     color: red;
+     font-size: 40px;
+}
